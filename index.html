@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+          <header>
+              <h1>Student Enrollment Form</h1>
+          </header>
+          <main>
+              <div class="form">
+                  <h2>Enter Your Details Here</h2>
+                  <form action="">
+                      <div>
+                          <label for="">Name</label>
+                          <input type="text" placeholder="Enter Your Name"  id="nametxt" autocomplete  autofocus required>
+                      </div>
+                      <div>
+                          <label for="">Email</label>
+                          <input type="mail" placeholder="Enter Your Mail Id" id="mailtxt" required>
+                      </div>
+                      <div>
+                          <label for="">DOB</label>
+                          <input type="date" placeholder="Enter Your DOB" id="dobtxt" required>
+                      </div>
+                      <div>
+                          <label for="">Image</label>
+                          <input type="file" style="border:none"  id="imgtxt" required>
+                      </div>
+                      <div >
+                          <label for="">Gender</label>
+                          <div style="margin:5px">
+                          <p><input type="radio" name="gender" class="radios" value="Male" id="maletxt" selected><span>Male</span></p>
+                          <p><input type="radio" name="gender" class="radios" value="Female" id="femaletxt"><span>Female</span></p>
+                          <p><input type="radio" name="gender" class="radios" value="Others" id="othertxt"><span>Others</span></p>
+                          </div>
+                      </div>
+                  </form>
+                  <div class="buttons">
+                      <button onclick="submit()">Register</button>
+                      <button onclick="clearin()">Clear</button>
+                  </div>
+              </div>
+              <div class="output" id="output-div">
+              </div>
+          </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

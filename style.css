@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #D8CCA3;
+   
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    background: #B24592;
+    background: -webkit-linear-gradient(to top, #F15F79, #B24592);
+    background: linear-gradient(to top, #F15F79, #B24592);
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+main{
+    display: flex;
+    flex: 1;
+}
+.form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 37, 109, 133 , .8);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+}
+
+.form , .admit-card{
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px);
+border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.form form{
+    width: 100%;
+}
+.form form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.form form div label{
+    margin-bottom: 5px;
+}
+.form form div input.radios{
+    width: 5%;
+}
+.form form div input{
+    width: 80%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.buttons button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to top, #F15F79, #B24592);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+.buttons button:hover{
+    background: linear-gradient(to top, #B24592, #F15F79);
+}
+.output{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.output .admit-card{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background: #e1e1e1;*/
+    line-height: 30px;
+    position: relative;
+    padding: 30px 40px 20px;
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+.output .admit-card .cross{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.output .admit-card .details{
+    display: flex;
+    flex-direction: column;
+
+}
+.output .admit-card .image{
+    width: auto;
+    height: 150px;
+    
+}
+.output .admit-card .image img{
+    width: 100%;
+    height: 100%;
+}
