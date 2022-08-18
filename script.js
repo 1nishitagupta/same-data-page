@@ -82,10 +82,6 @@ const submit = () => {
    mainDivData.appendChild(imgData);
    outputs.appendChild(mainDivData);
 
-
-
-
-
   }
 };
 
